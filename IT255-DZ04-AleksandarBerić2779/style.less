@@ -1,0 +1,299 @@
+@boja1: #979797;
+@boja2: black;
+@boja3: #FF9900;
+@boja4: gold;
+@boja5: chocolate;
+@pozBoja1: #ffff33;
+@pozBoja2: #ECECEC;
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	color: @boja1;
+	background-color: @pozBoja1;
+}
+.clear {
+	&:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+	}
+}
+a {
+	outline: none;
+	text-decoration: none;
+}
+.fl_left {
+	float: left;
+}
+.fl_right {
+	float: right;
+}
+img {
+	margin: 0;
+	padding: 0;
+	border: none;
+	line-height: normal;
+	vertical-align: middle;
+}
+.imgl {
+	float: left;
+	margin: 0 15px 15px 0;
+	clear: left;
+}
+.imgr {
+	float: right;
+	margin: 0 0 15px 15px;
+	clear: right;
+}
+div.wrapper {
+	display: block;
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: left;
+}
+.row1 {
+	color: @boja2;
+	a {
+		color: @boja2;
+	}
+}
+.row2 {
+	color: @boja2;
+	a {
+		color: @boja3;
+	}
+}
+.row3 {
+	border-top: 1px solid #000000;
+	color: @boja2;
+	a {
+		color: @boja2;
+	}
+}
+#header {
+	display: block;
+	width: 960px;
+	#hgroup {
+		padding: 20px 0 0 0;
+		float: left;
+	}
+	nav {
+		display: block;
+		float: right;
+		margin: 20px 0 0 0;
+		padding: 20px 0;
+		li {
+			display: inline;
+			margin-right: 25px;
+			text-transform: uppercase;
+			a {
+				&:hover {
+					color: @boja4;
+				}
+			}
+		}
+		li.last {
+			margin-right: 0;
+		}
+	}
+}
+#container {
+	display: block;
+	width: 960px;
+	padding: 30px 0;
+	section {
+		display: block;
+		width: 100%;
+		margin: 0 0 30px 0;
+		padding: 0;
+	}
+	.more {
+		text-align: left;
+	}
+	#left_column {
+		float: left;
+		width: 280px;
+		h2.title {
+			margin-bottom: 18px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #000000;
+		}
+		nav {
+			display: block;
+			width: 100%;
+			margin-bottom: 30px;
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			li {
+				margin: 0 0 5px 0;
+			}
+			a {
+				display: block;
+				margin: 0;
+				padding: 5px 10px 5px 20px;
+				color: @boja2;
+				text-decoration: none;
+				border-bottom: 1px dotted black;
+				&:hover {
+					color: @boja2;
+				}
+			}
+		}
+	}
+	#content {
+		float: right;
+		width: 630px;
+		line-height: 1.7em;
+		article {
+			margin-bottom: 30px;
+		}
+		.last {
+			margin: 0;
+		}
+	}
+}
+#footer {
+	display: block;
+	width: 960px;
+	padding: 20px 0;
+	p {
+		margin: 0;
+		padding: 0;
+	}
+}
+nav {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: normal;
+	text-transform: uppercase;
+}
+h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: normal;
+	text-transform: uppercase;
+}
+h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: normal;
+	text-transform: uppercase;
+}
+h4 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: normal;
+	text-transform: uppercase;
+}
+h5 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: normal;
+	text-transform: uppercase;
+}
+h6 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: normal;
+	text-transform: uppercase;
+}
+blockquote {
+	display: block;
+	padding: 8px 10px;
+	color: @boja1;
+	background-color: @pozBoja2;
+	font-style: italic;
+	line-height: normal;
+	&:before {
+		content: '“ ';
+		font-size: 26px;
+	}
+	&:after {
+		content: ' „';
+		font-size: 26px;
+		line-height: 0;
+	}
+}
+q {
+	display: block;
+	padding: 8px 10px;
+	color: @boja1;
+	background-color: @pozBoja2;
+	font-style: italic;
+	line-height: normal;
+	&:before {
+		content: '“ ';
+		font-size: 26px;
+	}
+	&:after {
+		content: ' „';
+		font-size: 26px;
+		line-height: 0;
+	}
+}
+.one_third {
+	display: block;
+	float: left;
+	margin: 0 30px 0 0;
+	width: 300px;
+}
+.two_third {
+	display: block;
+	float: left;
+	margin: 0 30px 0 0;
+	width: 630px;
+}
+.three_third {
+	display: block;
+	float: left;
+	margin: 0 30px 0 0;
+	width: 960px;
+	float: none;
+	margin-right: 0;
+	clear: both;
+}
+.lastbox {
+	margin-right: 0;
+}
+[data-words] {
+	vertical-align: top;
+	position: static;
+	>span {
+		position: absolute;
+		color: @boja5;
+	}
+}
